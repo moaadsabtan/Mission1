@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="header-nav">
+        <div class="title">
+            <div><h3>GoMake Dashborad</h3></div>
+        </div>
+        <div class="right-nav">
+            <div><a href="/login.html">Sign out</a></div>
+        </div>
+    </div>
+    <div class="contain-bd">
+        <div class="route">
+            <div>
+                <h3>Dashborad</h3>
+            </div>
+        </div>
+        <div class="vertical-nav">
+            <div class="name-users">
+               <div><h5>Mai Hamduni</h5></div> 
+                <div><h6>Admin</h6></div>
+            </div>
+            <div class="term">
+            <div class="terms">
+                <div class="product-add"><a href="/product.html">Product</a>
+                </div>
+            </div>
+            <div class="inervoty">
+                <div class="invertory-add"><a href="/inventory.html">inventory</a>
+                </div>
+            </div>
+            <div class="user-terms-for-admin">
+                <div class="users-add"><a href="/users.html">Users</a>
+                </div>
+            </div>
+        </div>
+        </div>
+     </div>
+
+
+
+    <div class="table-product">
+        <div class="nav-bar-head">
+            <div>
+                <button onclick="Toggle()" class="button-plus">+
+                </button>
+            </div>
+         </div>
+        <div class="container">
+             <div class="table">
+                <div><h4>product in stock</h4></div>
+                <div class="container-product" id="table-content">
+                    <table class="prod">
+                        <thead>
+                            <tr>
+                                <th>code</th>
+                                <th>name</th>
+                                <th>category type</th>
+                                <th>creatin date</th>
+                                <th>update date</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1236</td>
+                                <td>intel icore5</td>
+                                <td>product intel</td>
+                                <td>1-2-2000</td>
+                                <td>2-4-2000</td>
+                                <td><button class="delete-data-btn">-</button></td>
+                            </tr>
+                            <tr>
+                                <td>1236</td>
+                                <td>intel icore5</td>
+                                <td>product intel</td>
+                                <td>1-2-2000</td>
+                                <td>2-4-2000</td>
+                                <td><button class="delete-data-btn">-</button></td>
+                            </tr>
+                            <tr>
+                                <td>1236</td>
+                                <td>intel icore5</td>
+                                <td>product intel</td>
+                                <td>1-2-2000</td>
+                                <td>2-4-2000</td>
+                                <td><button class="delete-data-btn">-</button></td>
+                            </tr>
+                            <tr>
+                                <td>1236</td>
+                                <td>intel icore5</td>
+                                <td>product intel</td>
+                                <td>1-2-2000</td>
+                                <td>2-4-2000</td>
+                                <td><button class="delete-data-btn">-</button></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                  
+                </div>
+             </div>
+             <div id="add-show"  class="add-product" style="display: none;">
+                 <div>
+                     <input type="text" placeholder="Code product"/>
+                 </div>
+                 <div>
+                     <input type="text" placeholder="Name Product"/>
+                 </div>
+                 <div>
+                     <input type="text" placeholder="Category type"/>
+                 </div>
+                 <div>
+                     <form>
+                         <label for="creationDate"> Creation Date</label>
+                         <input type="date" id="creationDate" />
+                     </form>
+                 </div>
+                 <div>
+                    <form>
+                        <label for="creationDate"> Update Date</label>
+                        <input type="date" id="creationDate" />
+                    </form>
+                </div>
+                <div class="btn-add-wid">
+                    <button class="add-btn">
+                        Add product
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="update-product" id="update">
+                <div>
+                    <input type="text" placeholder="Code product"/>
+                </div>
+                <div>
+                    <input type="text" placeholder="Name Product"/>
+                </div>
+                <div>
+                    <input type="text" placeholder="Category type"/>
+                </div>
+                <div>
+                    <form>
+                        <label for="creationDate"> Creation Date</label>
+                        <input type="date" id="creationDate" />
+                    </form>
+                </div>
+                <div>
+                   <form>
+                       <label for="creationDate"> Update Date</label>
+                       <input type="date" id="creationDate" />
+                   </form>
+               </div>
+               <div class="btn-add-wid-2">
+                   <button class="add-btn">
+                       Update product
+                   </button>
+               </div>
+
+            </div>
+
+               
+            
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

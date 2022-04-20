@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="header-nav">
+        <div class="title">
+            <div>
+                <h3>GoMake Dashborad</h3>
+            </div>
+        </div>
+        <div class="right-nav">
+            <div><a href="/login.html">Sign out</a></div>
+        </div>
+    </div>
+    <div class="vertical-nav">
+        <div class="name-users">
+            <div>
+                <h5>Mai Hamduni</h5>
+            </div>
+            <div>
+                <h6>Admin</h6>
+            </div>
+        </div>
+
+        <div class="terms">
+            <div class="product-add"><a href="/product.html">Product</a>
+            </div>
+        </div>
+        <div class="inervoty">
+            <div class="invertory-add"><a href="/inventory.html">inventory</a>
+            </div>
+        </div>
+        <div class="user-terms-for-admin">
+            <div class="users-add"><a href="/users.html">Users</a>
+            </div>
+        </div>
+
+</div>
+    <div class="contain-bd">
+        <div class="route">
+            <div>
+                <h3>Dashborad</h3>
+            </div>
+        </div>
+    
+    </div>
+    <div class="table-inventory">
+        <div class="nav-bar-head">
+            <div>
+                <button  onclick="Toggle()" class="button-plus-primary">+
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="table-inv">
+                <div>
+                    <h4>invertory in stock</h4>
+                </div>
+                <div class="container-product" id="table-content">
+                    <table class="inv">
+                        <thead>
+                            <tr>
+                                <th>code</th>
+                                <th>added date</th>
+                                <th>amout (product quantity)</th>
+
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1236</td>
+                                <td>intel icore5</td>
+                                <td>product intel</td>
+
+                                <td><button class="delete-data-btn-inv">-</button></td>
+                            </tr>
+                            <tr>
+                                <td>1236</td>
+                                <td>intel icore5</td>
+                                <td>product intel</td>
+
+                                <td><button class="delete-data-btn-inv">-</button></td>
+                            </tr>
+                            <tr>
+                                <td>1236</td>
+                                <td>intel icore5</td>
+                                <td>product intel</td>
+
+                                <td><button class="delete-data-btn-inv">-</button></td>
+                            </tr>
+                            <tr>
+                                <td>1236</td>
+                                <td>intel icore5</td>
+                                <td>product intel</td>
+                                <td><button class="delete-data-btn-inv">-</button></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+
+                </div>
+            </div>
+            <div id="add-show" class="add-inv" style="display: none;">
+                <div>
+                    <input type="number" placeholder="product quantity" />
+                </div>
+                <div>
+                    <form>
+                        <label for="AddedDate">Added Date</label>
+                        <input type="date" id="AddedDate" />
+                    </form>
+                </div>
+                <div class="btn-add-wid">
+                    <button class="add-btn-inv">
+                        Add inervoty
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="update-inv" id="update">
+                <div>
+                    <input type="number" placeholder="product quantity" />
+                </div>
+                <div>
+                    <form>
+                        <label for="AddedDate"> Added Date</label>
+                        <input type="date" id="AddedDate" />
+                    </form>
+                </div>
+                <div class="btn-add-wid-2">
+                    <button class="add-btn-inv">
+                        Update product
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
