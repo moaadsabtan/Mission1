@@ -77,31 +77,11 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1236</td>
-                                <td>intel icore5</td>
-                                <td>product intel</td>
+                                <td id="id">1236</td>
+                                <td id="addedDate">intel icore5</td>
+                                <td id="quantity">product intel</td>
 
-                                <td><button class="delete-data-btn-inv">-</button></td>
-                            </tr>
-                            <tr>
-                                <td>1236</td>
-                                <td>intel icore5</td>
-                                <td>product intel</td>
-
-                                <td><button class="delete-data-btn-inv">-</button></td>
-                            </tr>
-                            <tr>
-                                <td>1236</td>
-                                <td>intel icore5</td>
-                                <td>product intel</td>
-
-                                <td><button class="delete-data-btn-inv">-</button></td>
-                            </tr>
-                            <tr>
-                                <td>1236</td>
-                                <td>intel icore5</td>
-                                <td>product intel</td>
-                                <td><button class="delete-data-btn-inv">-</button></td>
+                                <td><button class="delete-data-btn-inv" onclick="deleteInventory()">-</button></td>
                             </tr>
                         </tbody>
 
@@ -121,7 +101,7 @@
                     </form>
                 </div>
                 <div class="btn-add-wid">
-                    <button class="add-btn-inv">
+                    <button class="add-btn-inv" onclick="fetchPost()">
                         Add inervoty
                     </button>
                 </div>
@@ -139,7 +119,7 @@
                     </form>
                 </div>
                 <div class="btn-add-wid-2">
-                    <button class="add-btn-inv">
+                    <button class="add-btn-inv" onclick="updateInentory()">
                         Update product
                     </button>
                 </div>

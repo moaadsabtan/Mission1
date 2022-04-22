@@ -1,20 +1,15 @@
 const Http = new XMLHttpRequest();
-const url='https://jsonplaceholder.typicode.com/posts';
+const url='https://localhost:7260/api/Product';
+var products = [];
 Http.open("GET", url);
 Http.send();
-/*
 Http.onreadystatechange = (e) => {
-  console.log(Http.responseText)
+  products=responseText;
 }
-*/
 
-/**** */
-// const verticalNav = document.querySelector('.vertical-nav');
-// const body = document.querySelector('body')
-// window.addEventListener('scroll',function(e){
-//   verticalNav.style.height = window.innerHeight + 'px'
-//   //console.log(window.innerHeight)
-// });
+
+
+
 const updateProductSection  = document.querySelector('#update')
 const productsRows = document.querySelectorAll('#table-content tr');
 productsRows.forEach(function(row){

@@ -1824,19 +1824,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Smart\\.nuget\\packages\\": {}
+    "C:\\Users\\mayh9\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Smart\\source\\repos\\Mission\\Mission\\Mission.csproj",
+      "projectUniqueName": "C:\\Users\\mayh9\\OneDrive\\מסמכים\\GitHub\\Mission1\\BackEnd\\Mission\\Mission.csproj",
       "projectName": "Mission",
-      "projectPath": "C:\\Users\\Smart\\source\\repos\\Mission\\Mission\\Mission.csproj",
-      "packagesPath": "C:\\Users\\Smart\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Smart\\source\\repos\\Mission\\Mission\\obj\\",
+      "projectPath": "C:\\Users\\mayh9\\OneDrive\\מסמכים\\GitHub\\Mission1\\BackEnd\\Mission\\Mission.csproj",
+      "packagesPath": "C:\\Users\\mayh9\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mayh9\\OneDrive\\מסמכים\\GitHub\\Mission1\\BackEnd\\Mission\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Smart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mayh9\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

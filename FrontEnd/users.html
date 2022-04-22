@@ -63,24 +63,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1236</td>
-                                <td>intel icore5</td>
-                                <td><button class="delete-data-btn-us">-</button></td>
-                            </tr>
-                            <tr>
-                                <td>1236</td>
-                                <td>intel icore5</td>
-                                <td><button class="delete-data-btn-us">-</button></td>
-                            </tr>
-                            <tr>
-                                <td>1236</td>
-                                <td>intel icore5</td>
-                                <td><button class="delete-data-btn-us">-</button></td>
-                            </tr>
-                            <tr>
-                                <td>1236</td>
-                                <td>intel icore5</td>
-                                <td><button class="delete-data-btn-us">-</button></td>
+                                <td id="username"></td>
+                                <td id="name"></td>
+                                <td><button class="delete-data-btn-us" onclick="deleteUsers()">-</button></td>
                             </tr>
                         </tbody>
 
@@ -100,8 +85,8 @@
                      <input type="text" placeholder="password"/>
                  </div>
                 <div class="btn-add-wid">
-                    <button class="add-btn-user">
-                        Add product
+                    <button class="add-btn-user" onclick="fetchPost()">
+                        Add user
                     </button>
                 </div>
 
@@ -109,16 +94,16 @@
 
             <div class="update-product" id="update">
                 <div>
-                    <input type="text" placeholder="username"/>
+                    <input type="text" placeholder="username" id="username"/>
                 </div>
                 <div>
-                    <input type="text" placeholder="fullname"/>
+                    <input type="text" placeholder="fullname" id="name"/>
                 </div>
                 <div>
-                    <input type="text" placeholder="password"/>
+                    <input type="text" placeholder="password" id="password"/>
                 </div>
                <div class="btn-add-wid-2">
-                   <button class="add-btn-user">
+                   <button class="add-btn-user" onclick="updateUsers()">
                        Update product
                    </button>
                </div>
@@ -130,6 +115,6 @@
         </div>
     </div>
     
-<script src="js/main.js"></script>
+<script src="js/users.js"></script>
 </body>
 </html>

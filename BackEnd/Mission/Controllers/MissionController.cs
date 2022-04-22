@@ -5,12 +5,12 @@ namespace Mission.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MissionControllers : Controller
+    public class MissionController : Controller
     {
 
 
         private readonly DataContext _context;
-        public MissionControllers(DataContext context)
+        public MissionController(DataContext context)
         {
             _context = context;
 
@@ -22,7 +22,6 @@ namespace Mission.Controllers
             return Ok(await _context.users.ToListAsync());
 
         }
-        [HttpGet]
         public async Task<ActionResult<List<product>>> Getproduct()
         {
             return Ok(await _context.products.ToListAsync());

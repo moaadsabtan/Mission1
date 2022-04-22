@@ -68,38 +68,14 @@
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tbody">
                             <tr>
-                                <td>1236</td>
-                                <td>intel icore5</td>
-                                <td>product intel</td>
-                                <td>1-2-2000</td>
-                                <td>2-4-2000</td>
-                                <td><button class="delete-data-btn">-</button></td>
-                            </tr>
-                            <tr>
-                                <td>1236</td>
-                                <td>intel icore5</td>
-                                <td>product intel</td>
-                                <td>1-2-2000</td>
-                                <td>2-4-2000</td>
-                                <td><button class="delete-data-btn">-</button></td>
-                            </tr>
-                            <tr>
-                                <td>1236</td>
-                                <td>intel icore5</td>
-                                <td>product intel</td>
-                                <td>1-2-2000</td>
-                                <td>2-4-2000</td>
-                                <td><button class="delete-data-btn">-</button></td>
-                            </tr>
-                            <tr>
-                                <td>1236</td>
-                                <td>intel icore5</td>
-                                <td>product intel</td>
-                                <td>1-2-2000</td>
-                                <td>2-4-2000</td>
-                                <td><button class="delete-data-btn">-</button></td>
+                                <td id="code"></td>
+                                <td id="name"></td>
+                                <td id="categorytype"></td>
+                                <td id="creatindate"></td>
+                                <td id="updatedate"></td>
+                                <td><button class="delete-data-btn" onclick="deleteProduct()">-</button></td>
                             </tr>
                         </tbody>
 
@@ -131,7 +107,7 @@
                     </form>
                 </div>
                 <div class="btn-add-wid">
-                    <button class="add-btn">
+                    <button class="add-btn" onclick="fetchPost()">
                         Add product
                     </button>
                 </div>
@@ -140,13 +116,13 @@
 
             <div class="update-product" id="update">
                 <div>
-                    <input type="text" placeholder="Code product"/>
+                    <input type="text" placeholder="Code product" id="code"/>
                 </div>
                 <div>
-                    <input type="text" placeholder="Name Product"/>
+                    <input type="text" placeholder="Name Product" id="name"/>
                 </div>
                 <div>
-                    <input type="text" placeholder="Category type"/>
+                    <input type="text" placeholder="Category type" id="category" />
                 </div>
                 <div>
                     <form>
@@ -156,12 +132,12 @@
                 </div>
                 <div>
                    <form>
-                       <label for="creationDate"> Update Date</label>
-                       <input type="date" id="creationDate" />
+                       <label for="updateDate"> Update Date</label>
+                       <input type="date" id="updateDate" />
                    </form>
                </div>
                <div class="btn-add-wid-2">
-                   <button class="add-btn">
+                   <button class="add-btn" onclick="updateProduct()">
                        Update product
                    </button>
                </div>
@@ -172,6 +148,6 @@
             
         </div>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/product.js"></script>
 </body>
 </html>
