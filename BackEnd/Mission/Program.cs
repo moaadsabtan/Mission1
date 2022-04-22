@@ -1,5 +1,6 @@
-global using Mission.Data;
-global using Microsoft.EntityFrameworkCore;
+
+using Microsoft.EntityFrameworkCore;
+using Mission.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";

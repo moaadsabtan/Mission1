@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
+using Mission.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Mission.Controllers
 {
@@ -15,18 +17,21 @@ namespace Mission.Controllers
             _context = context;
 
          }
-
+        [Route("Getusers")]
         [HttpGet]
         public async Task<ActionResult<List<users>>> Getusers()
         {
             return Ok(await _context.users.ToListAsync());
 
         }
+        [Route("Getproduct")]
+        [HttpGet]
         public async Task<ActionResult<List<product>>> Getproduct()
         {
             return Ok(await _context.products.ToListAsync());
 
         }
+        [Route("Getinventory")]
         [HttpGet]
 
         public async Task<ActionResult<List<inventory>>> Getinventory()
@@ -36,7 +41,9 @@ namespace Mission.Controllers
         }
 
 
+        [Route("GetuserbyID")]
         [HttpGet]
+
         public async Task<ActionResult<users>> GetuserbyID(int id)
         {
             var user = await _context.users.FindAsync(id);
@@ -44,8 +51,9 @@ namespace Mission.Controllers
                 return BadRequest("user not found");
             return Ok(user);
 
-        } 
+        }
 
+        [Route("GetproductbyID")]
         [HttpGet]
         public async Task<ActionResult<product>> GetproductbyID(int id)
         {
@@ -55,6 +63,7 @@ namespace Mission.Controllers
             return Ok(product);
 
         }
+        [Route("GetInventory")]
         [HttpGet]
 
         public async Task<ActionResult<inventory>> GetInventory(int id)
@@ -65,9 +74,9 @@ namespace Mission.Controllers
             return Ok(inventory);
 
         }
-
+        [Route("Adduser")]
         [HttpPost]
-        public async Task<ActionResult<List<users>>> Adduser(users user)
+        public async Task<ActionResult<List<users>>> Adduser( users user)
         {
           _context.users.Add(user);
             await _context.SaveChangesAsync();
@@ -76,6 +85,7 @@ namespace Mission.Controllers
 
         }
 
+        [Route("Addproduct")]
         [HttpPost]
 
         public async Task<ActionResult<List<product>>>Addproduct(product product)
@@ -86,6 +96,7 @@ namespace Mission.Controllers
 
         }
 
+        [Route("Addinventory")]
         [HttpPost]
         public async Task<ActionResult<List<inventory>>> Addinventory(inventory inv)
         {
@@ -94,7 +105,8 @@ namespace Mission.Controllers
             return Ok(await _context.inventory.ToListAsync());  
 
         }
-        [HttpPut]
+        [Route("updateUser")]
+        [HttpPost]
         public async Task<ActionResult<List<users>>> updateUser(users requeset)
         {
             var dbUser = await _context.users.FindAsync(requeset.id);
@@ -109,7 +121,8 @@ namespace Mission.Controllers
             return Ok(await _context.users.ToListAsync());
         }
 
-        [HttpPut]
+        [Route("updateProduct")]
+        [HttpPost]
         public async Task<ActionResult<List<product>>> updateProduct(product requeset)
         {
             var product = await _context.products.FindAsync(requeset.Id);
@@ -122,8 +135,8 @@ namespace Mission.Controllers
             return Ok(await _context.products.ToListAsync());
         }
 
-        // error's 
-        [HttpPut]
+        [Route("updateinventory")]
+        [HttpPost]
         public async Task<ActionResult<List<inventory>>> updateinventory(inventory requeset)
         {
             var invs = await _context.inventory.FindAsync(requeset.id);
@@ -135,7 +148,8 @@ namespace Mission.Controllers
 
 
 
-        [HttpDelete ("{id}")]
+        [Route("DeleteUser")]
+        [HttpPost]
         public async Task<ActionResult<List<users>>> DeleteUser(int  id)
         {
             var user = await _context.users.FindAsync(id);
@@ -147,7 +161,8 @@ namespace Mission.Controllers
        
         }
 
-        [HttpDelete ("{code}")]
+        [Route("DeleteProduct")]
+        [HttpPost]
         public async Task<ActionResult<List<product>>> DeleteProduct(int code)
         {
             var product = await _context.products.FindAsync(code);
@@ -156,7 +171,8 @@ namespace Mission.Controllers
             await _context.SaveChangesAsync();
             return Ok(await _context.products.ToListAsync());
         }
-        [HttpDelete("{id}")]
+        [Route("DeleteInventory")]
+        [HttpPost]
         public async Task<ActionResult<List<inventory>>> DeleteInventory(int id)
         {
             var inventory = await _context.inventory.FindAsync(id);
